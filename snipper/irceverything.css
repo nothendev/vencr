@@ -63,7 +63,9 @@ div[class|="spineBorder"] {
 
 .timestamp-p1Df1m {
 	font-family: var(--font-other);
-	min-width: max-content;
+}
+.timestamp-p1Df1m.latin24CompactTimeStamp-2pXUBq {
+	width: 4.2rem;
 }
 
 :root {
