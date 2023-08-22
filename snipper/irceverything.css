@@ -80,7 +80,7 @@ div[class|="repliedMessage"]::before {
 	content: var(--replied-message-marker);
 }
 
-span[class|="username"]::after {
+div[class|="message"] span[class|="username"]::after {
 	font-family: var(--font-sec);
 	content: var(--username-message-delimiter);
 	font-weight: bold;
