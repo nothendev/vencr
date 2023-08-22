@@ -63,10 +63,7 @@ div[class|="spineBorder"] {
 
 .timestamp-p1Df1m {
 	font-family: var(--font-other);
-}
-
-.vc-platform-indicator {
-	top: 0;
+	min-width: max-content;
 }
 
 :root {
