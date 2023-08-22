@@ -80,6 +80,12 @@ div[class|="repliedMessage"]::before {
 	content: var(--replied-message-marker);
 }
 
+span[class|="username"]::after {
+	font-family: var(--font-sec);
+	content: var(--username-message-delimiter);
+	font-weight: bold;
+}
+
 :root {
 	--font-prim: Monocraft; /* primary font */
 	--font-sec: Minecraft; /* secondary font */
@@ -98,7 +104,10 @@ div[class|="repliedMessage"]::before {
 	--username-font-size: 1em;
 	--message-font-size: 1em;
 	--thread-margin: 36px;
+	/** ascii reply marker */
 	--replied-message-pointer: "=<<";
 	--replied-message-marker: "/---";
 	--replied-message-pointer-spacing: 0.9em;
+	/** username: message delimiter */
+	--username-message-delimiter: ":";
 }
