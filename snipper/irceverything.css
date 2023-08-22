@@ -72,12 +72,12 @@ div[class|="replyBadge"] svg {
 	display: none;
 }
 div[class|="replyBadge"]::before {
-	content: "=<<";
-	margin-right: 0.9em;
+	content: var(--replied-message-pointer);
+	margin-right: var(--replied-message-pointer-spacing);
 }
 div[class|="repliedMessage"]::before {
 	border: none;
-	content: "/---";
+	content: var(--replied-message-marker);
 }
 
 :root {
@@ -98,4 +98,7 @@ div[class|="repliedMessage"]::before {
 	--username-font-size: 1em;
 	--message-font-size: 1em;
 	--thread-margin: 36px;
+	--replied-message-pointer: "=<<";
+	--replied-message-marker: "/---";
+	--replied-message-pointer-spacing: 0.9em;
 }
