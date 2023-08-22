@@ -26,10 +26,10 @@
 	font-family: var(--font-sec);
 	font-weight: bold;
 }
-.iconContainer-21RCa3[aria-label="Voice"], .iconContainer-21RCa3[aria-label="Voice (Limited)"]::before {
+.iconContainer-21RCa3[aria-label="Voice"]::before, .iconContainer-21RCa3[aria-label="Voice (Limited)"]::before {
 	content: var(--channel-symbol-voice);
 }
-.iconContainer-21RCa3[aria-label="Stage"], .iconContainer-21RCa3[aria-label="Stage (Limited)"]::before {
+.iconContainer-21RCa3[aria-label="Stage"]::before, .iconContainer-21RCa3[aria-label="Stage (Limited)"]::before {
 	content: var(--channel-symbol-stage);
 }
 .spine-29OFwR {
