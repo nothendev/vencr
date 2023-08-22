@@ -68,6 +68,18 @@ div[class|="spineBorder"] {
 	width: 4.2rem;
 }
 
+div[class|="replyBadge"] svg {
+	display: none;
+}
+div[class|="replyBadge"]::before {
+	content: "=<<";
+	margin-right: 0.9em;
+}
+div[class|="repliedMessage"]::before {
+	border: none;
+	content: "/---";
+}
+
 :root {
 	--font-prim: Monocraft; /* primary font */
 	--font-sec: Minecraft; /* secondary font */
