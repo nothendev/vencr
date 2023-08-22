@@ -1,0 +1,90 @@
+.username-h_Y3Us {
+	font-family: var(--font-prim), monospace;
+	font-size: var(--username-font-size, inherit);
+}
+
+.messageContent-2t3eCI {
+	font-family: var(--font-prim), monospace;
+	font-size: var(--username-font-size, inherit);
+}
+
+.iconContainer-21RCa3 > svg {
+	display: none;
+}
+.iconContainer-21RCa3::before {
+	content: var(--channel-symbol-normal);
+	font-family: var(--font-prim);
+	font-weight: normal;
+	color: hsl(var(--channel-symbol));
+}
+.content-2V2neN .iconContainer-21RCa3::before {
+	content: var(--channel-symbol-server-guide);
+	font-family: var(--font-sec);
+}
+.modeUnread-3Cxepe .iconContainer-21RCa3::after {
+	content: var(--channel-symbol-unread);
+	font-family: var(--font-sec);
+	font-weight: bold;
+}
+.iconContainer-21RCa3[aria-label="Voice"], .iconContainer-21RCa3[aria-label="Voice (Limited)"]::before {
+	content: var(--channel-symbol-voice);
+}
+.iconContainer-21RCa3[aria-label="Stage"], .iconContainer-21RCa3[aria-label="Stage (Limited)"]::before {
+	content: var(--channel-symbol-stage);
+}
+.spine-29OFwR {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+.spine-29OFwR + .typeThread-2Aqh6X .name-28HaxV::before {
+	content: var(--channel-symbol-thread);
+	font-family: var(--font-sec);
+	font-weight: bold;
+	color: hsl(var(--channel-symbol));
+}
+.typeThread-2Aqh6X.wrapper-NhbLHG {
+	margin-left: var(--thread-margin, 0);
+}
+div[class|="spineBorder"] {
+	display: none;
+}
+
+.iconContainer-21RCa3 {
+	margin-right: 0;
+	padding: 0;
+}
+
+.name-28HaxV {
+	padding: 0;
+	margin-left: 0;
+	font-family: var(--font-prim);
+}
+
+.timestamp-p1Df1m {
+	font-family: var(--font-other);
+}
+
+.vc-platform-indicator {
+	top: 0;
+}
+
+:root {
+	--font-prim: Monocraft; /* primary font */
+	--font-sec: Minecraft; /* secondary font */
+	--font-other: JetBrainsMono Nerd Font Mono;
+	--font-primary: var(--font-prim) !important;
+	--font-display: var(--font-sec) !important;
+	--channel-symbol: 217 92% 76%; /* channel symbol color; catppuccin lavender here */
+	/** channel symbols */
+	--channel-symbol-normal: "#";
+	--channel-symbol-server-guide: "$";
+	--channel-symbol-unread: "*";
+	--channel-symbol-stage: "!";
+	--channel-symbol-voice: "?";
+	--channel-symbol-thread: "&";
+	/** font sizes */
+	--username-font-size: 1em;
+	--message-font-size: 1em;
+	--thread-margin: 36px;
+}
