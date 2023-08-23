@@ -86,6 +86,10 @@ div[class|="message"] span[class|="username"]::after {
 	font-weight: bold;
 }
 
+div[class|="iconContainer"][aria-label="Forum"]::before {
+	content: var(--channel-symbol-forum);
+}
+
 :root {
 	--font-prim: Monocraft; /* primary font */
 	--font-sec: Minecraft; /* secondary font */
@@ -100,6 +104,7 @@ div[class|="message"] span[class|="username"]::after {
 	--channel-symbol-stage: "!";
 	--channel-symbol-voice: "?";
 	--channel-symbol-thread: "&";
+	--channel-symbol-forum: "%";
 	/** font sizes */
 	--username-font-size: 1em;
 	--message-font-size: 1em;
